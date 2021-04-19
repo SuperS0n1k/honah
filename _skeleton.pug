@@ -1,0 +1,16 @@
+include _mixins
+include _config
+ 
+block variables
+ 
+doctype html
+html( lang="en" )
+    head
+        block title
+            title= pageName
+        meta( charset='utf-8' )
+        link( rel="icon" href="images/favicon.ico" type="image/x-icon" )
+        link( rel="stylesheet" href="css/style.css" id="main-styles-link" )
+    body
+        block page
+        script( src="js/script.js" )
